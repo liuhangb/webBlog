@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Home from '@/components/Home'
 
 Vue.use(Router)
-
-/* Layout */
-import Layout from '../views/layout/Layout'
 
 /**
  * hidden: true                   if `hidden:true` will not show in the sidebar(default is false)
@@ -19,7 +17,38 @@ import Layout from '../views/layout/Layout'
   }
  **/
 export const constantRouterMap = [
-    {path: '/', component: () => import('@/views/login/index'), hidden: true}
+    {
+        path: '/',
+        redirect:'/partOne',
+        children:[
+            {
+                path:'partOne',
+                name:'partOne',
+                component: () => import('@/views/PartOne')
+            },
+            {
+                path:'partTwo',
+                name:'partTwo',
+                component: () => import('@/views/PartTwo')
+            },
+            {
+                path:'partThree',
+                name:'partThree',
+                component: () => import('@/views/PartThree')
+            },
+            {
+                path:'partFour',
+                name:'partFour',
+                component: () => import('@/views/PartFour')
+            },
+            {
+                path:'partFive',
+                name:'partFive',
+                component: () => import('@/views/PartFive')
+            }
+        ],
+        component: Home
+    },
 ]
 
 export default new Router({

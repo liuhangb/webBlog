@@ -2,11 +2,14 @@ export default {
   zh: {
     join_us: 'Join Us',
     login:'Login',
-    first_headline: '15 Tips To Increase Your Adwords Profits',
+    first_headline_1: '15 Tips To Increase',
+    first_headline_2:'Your Adwords',
+    first_headline_3:'Profits',
     first_content: 'For a time I worker in a convenience store as a clerk and cook and I used a deep fryer quite a bit for cooking battered chicken and French friend potatoes.',
     learn_more:'Learn More',
     first_author: 'CHRISTOPHER VASQUEZ',
     first_publish_time:'02 NOV 2019',
+    first_share:'SHARE',
 
     second_part_1_headline:'Decorate For Less With Art Posters',
     second_part_1_author:'ALVIN JACKSON',
@@ -49,15 +52,24 @@ export default {
     five_picture_2_time:'13 Oct 2019',
     five_picture_3_author:'Logan Lopez',
     five_picture_3_time:'26 Jan 2019',
+
+    part_one: 'PartOne',
+    part_two: 'PartTwo',
+    part_three: 'PartThree',
+    part_four: 'PartFour',
+    part_five: 'PartFive',
   },
   en: {
     join_us: 'Join Us',
     login:'Login',
-    first_headline: '15 Tips To Increase Your Adwords Profits',
+    first_headline_1: '15 Tips To Increase',
+    first_headline_2:'Your Adwords',
+    first_headline_3:'Profits',
     first_content: 'For a time I worker in a convenience store as a clerk and cook and I used a deep fryer quite a bit for cooking battered chicken and French friend potatoes.',
     learn_more:'Learn More',
     first_author: 'CHRISTOPHER VASQUEZ',
     first_publish_time:'02 NOV 2019',
+    first_share:'SHARE',
 
     second_part_1_headline:'Decorate For Less With Art Posters',
     second_part_1_author:'ALVIN JACKSON',
@@ -100,5 +112,11 @@ export default {
     five_picture_2_time:'13 Oct 2019',
     five_picture_3_author:'Logan Lopez',
     five_picture_3_time:'26 Jan 2019',
+
+    part_one: 'PartOne',
+    part_two: 'PartTwo',
+    part_three: 'PartThree',
+    part_four: 'PartFour',
+    part_five: 'PartFive',
   },
 }
