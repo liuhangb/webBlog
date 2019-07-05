@@ -16,7 +16,7 @@ export default {
 <style>
 #app {
   width: 1300px;
-  height: 772px;
+  height: 1030px;
   background: #ffffff;
   box-shadow: 0px 17px 40px rgba(5,43,56,0.1);
 }

@@ -16,17 +16,17 @@
             <div class="detail_footer">
                 <span class="learn_more">{{this.$t('learn_more')}}</span>
                 <img class="left_arrow" src="@/assets/left_arrow.png">
-                <span class="share_text">{{this.$t('first_share')}}</span>
-                <img class="faceb" src="@/assets/facebIcon.png">
-                <img class="twitt" src="@/assets/twittIcon.png">
+                <share class="share"></share>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import Share from "@/components/Share";
     export default {
-        name: "PartOne"
+        name: "PartOne",
+        components: {Share}
     }
 </script>
 
@@ -119,26 +119,8 @@
         height: 24px;
     }
 
-    .share_text {
-        color: #000e48;
-        font-family: Lato;
-        font-size: 10px;
-        font-weight: 700;
-        line-height: 16px;
-        text-transform: uppercase;
-        letter-spacing: 1.1px;
+    .share {
         margin-left: 260px;
-        margin-right: 30px;
     }
 
-    .faceb {
-        width: 24px;
-        height: 24px;
-    }
-
-    .twitt {
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-    }
 </style>
