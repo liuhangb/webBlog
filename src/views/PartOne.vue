@@ -3,10 +3,7 @@
         <img class="part_one_pic_1" src="@/assets/part_one_pic_1.png">
         <div class="detail">
             <span class="first_author">{{this.$t('first_author')}}</span>
-            <div class="time_container">
-                <img class="clock_icon" src="@/assets/clock_icon.png">
-                <span class="publish_time">{{this.$t('first_publish_time')}}</span>
-            </div>
+            <publish-time :time="this.$t('first_publish_time')"></publish-time>
             <div class="headline_container">
             <div class="headline">{{this.$t('first_headline_1')}}</div>
             <div class="headline">{{this.$t('first_headline_2')}}</div>
@@ -24,9 +21,10 @@
 
 <script>
     import Share from "@/components/Share";
+    import PublishTime from "@/components/PublishTime";
     export default {
         name: "PartOne",
-        components: {Share}
+        components: {PublishTime, Share}
     }
 </script>
 
