@@ -20,27 +20,8 @@
             },
             label: {
                 default: ""
-            },
-            name_color: {
-                type: String,
-                default: "#ffffff"
             }
         },
-
-        watch: {
-            name_color: {
-                immediate: true,
-                handler(newValue) {
-                    console.log("name_color: " + newValue)
-                    // this.$ref.style.color = newValue;
-                    // let nameStyle = document.getElementsByClassName("name_wrap");
-                    // for (let i = 0; i < nameStyle.length; i++) {
-                    //     console.log("nameStyle color: " + newValue)
-                    //     nameStyle[i].style.color = newValue;
-                    // }
-                }
-            }
-        }
     }
 </script>
 
