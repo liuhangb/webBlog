@@ -2,16 +2,7 @@
     <div class="part_five_container">
         <div class="headline">{{this.$t('five_headline')}}</div>
         <div class="sub_headline">{{this.$t('five_sub_headline')}}</div>
-        <div class="content">
-            <part-five-card class="card_1" :img="require('@/assets/part_5_picture_1.png')"
-                            :content="this.$t('five_picture_1_desc')"
-                            :name="this.$t('five_picture_1_author')"
-                            :time="this.$t('five_picture_1_time')"></part-five-card>
-
-            <part-five-card class="card_2" :img="require('@/assets/part_5_picture_2.png')"
-                            :content="this.$t('five_picture_2_desc')"
-                            :name="this.$t('five_picture_2_author')"
-                            :time="this.$t('five_picture_2_time')"></part-five-card>
+        <part-five-content class="content">
             <div class="card_3">
                 <img class="card_3_img" src="@/assets/part_5_picture_3.png">
                 <div class="card_3_bottom">
@@ -22,17 +13,18 @@
                     <div class="card_3_time">{{this.$t('five_picture_3_time')}}</div>
                 </div>
             </div>
-        </div>
+        </part-five-content>
     </div>
 </template>
 
 <script>
     import PartFiveCard from "@/components/PartFiveCard";
     import Share from "@/components/Share";
+    import PartFiveContent from "@/components/PartFiveContent";
 
     export default {
         name: "PartFive",
-        components: {Share, PartFiveCard}
+        components: {PartFiveContent, Share, PartFiveCard}
     }
 </script>
 
@@ -65,9 +57,7 @@
         margin-left: 95px;
     }
 
-    .card_2 {
-        margin-left: 30px;
-    }
+
 
     .card_3 {
         width: 445px;
