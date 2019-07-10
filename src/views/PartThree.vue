@@ -3,9 +3,7 @@
         <div class="headline">{{this.$t('third_headline')}}</div>
         <div class="sub_headline">{{this.$t('third_sub_headline')}}</div>
         <div class="middle">
-            <part-three-picture ref="picture_1" class="picture_1" :name="this.$t('third_picture_1_name')"
-                                :label="this.$t('third_picture_1_label')"
-                                :picture="require('@/assets/part_3_picture_1.png')"></part-three-picture>
+            <part-three-picture ref="picture_1" class="picture_1" v-bind="picture_1"></part-three-picture>
             <div class="picture_2">
                 <div class="picture_2_top">
                     <img class="picture_2_top_img" src="@/assets/part_3_picture_2.png">
@@ -19,9 +17,7 @@
                 </div>
                 <div class="picture_2_desc">{{this.$t('third_picture_2_desc')}}</div>
             </div>
-            <part-three-picture ref="picture_2" class="picture_3" :name="this.$t('third_picture_3_name')"
-                                :label="this.$t('third_picture_3_label')"
-                                :picture="require('@/assets/part_3_picture_3.png')"></part-three-picture>
+            <part-three-picture ref="picture_2" class="picture_3" v-bind="picture_2"></part-three-picture>
         </div>
         <div class="bottom">
             <div class="learn_more">{{this.$t('learn_more')}}</div>
@@ -36,6 +32,21 @@
     export default {
         name: "PartThree",
         components: {PartThreePicture},
+        data() {
+            return {
+                picture_1: {
+                    name: this.$t('third_picture_1_name'),
+                    label: this.$t('third_picture_1_label'),
+                    picture: require('@/assets/part_3_picture_1.png')
+                },
+
+                picture_2 : {
+                    name: this.$t('third_picture_3_name'),
+                    label: this.$t('third_picture_3_label'),
+                    picture: require('@/assets/part_3_picture_3.png')
+                }
+            }
+        },
         methods: {
             picture_1_color() {
                 this.$refs.picture_1.$refs.nameRef.style.color = "#000e48";
