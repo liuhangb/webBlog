@@ -30,18 +30,6 @@
     export default {
         name: "PartThree",
         components: {PartThreeContent},
-        methods: {
-            picture_1_color() {
-                this.$refs.picture_1.$refs.nameRef.style.color = "#000e48";
-            },
-            picture_2_color() {
-                this.$refs.picture_2.$refs.nameRef.style.color = "#ffffff";
-            }
-        },
-        mounted() {
-            this.picture_1_color();
-            this.picture_2_color();
-        },
     }
 </script>
 
