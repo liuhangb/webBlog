@@ -100,7 +100,9 @@
 
     .detail_footer {
         margin-top: 80px;
-        align-items:center; display: -webkit-flex;
+        align-items:center;
+        display: -webkit-flex; /* Safari */
+        display: flex;
     }
 
     .learn_more {
