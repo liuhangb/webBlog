@@ -2,29 +2,31 @@
     <div class="nav_container">
         <div class="nav_content">
             <img class="top_left_log" src="@/assets/home_top_left_logo.png"/>
+            <el-dropdown class="menu_list">
+                <img class="menu_icon" src="@/assets/home_menu_icon.png"/>
+                <el-dropdown-menu slot="dropdown">
+                    <router-link class="link" to="/partOne">
+                        <el-dropdown-item>{{this.$t('part_one')}}</el-dropdown-item>
+                    </router-link>
+                    <router-link class="link" to="/partTwo">
+                        <el-dropdown-item>{{this.$t('part_two')}}</el-dropdown-item>
+                    </router-link>
+                    <router-link class="link" to="/partThree">
+                        <el-dropdown-item>{{this.$t('part_three')}}</el-dropdown-item>
+                    </router-link>
+                    <router-link class="link" to="/partFour">
+                        <el-dropdown-item>{{this.$t('part_four')}}</el-dropdown-item>
+                    </router-link>
+                    <router-link class="link" to="/partFive">
+                        <el-dropdown-item>{{this.$t('part_five')}}</el-dropdown-item>
+                    </router-link>
+                </el-dropdown-menu>
+            </el-dropdown>
             <span class="joinText">{{this.$t('join_us')}}</span>
             <span class="loginText">{{this.$t('login')}}</span>
+
         </div>
-        <el-dropdown class="menu_list">
-            <img class="menu_icon" src="@/assets/home_menu_icon.png"/>
-            <el-dropdown-menu slot="dropdown">
-                <router-link class="link" to="/partOne">
-                <el-dropdown-item>{{this.$t('part_one')}}</el-dropdown-item>
-                </router-link>
-                <router-link class="link" to="/partTwo">
-                    <el-dropdown-item>{{this.$t('part_two')}}</el-dropdown-item>
-                </router-link>
-                <router-link class="link" to="/partThree">
-                    <el-dropdown-item>{{this.$t('part_three')}}</el-dropdown-item>
-                </router-link>
-                <router-link class="link" to="/partFour">
-                    <el-dropdown-item>{{this.$t('part_four')}}</el-dropdown-item>
-                </router-link>
-                <router-link class="link" to="/partFive">
-                    <el-dropdown-item>{{this.$t('part_five')}}</el-dropdown-item>
-                </router-link>
-            </el-dropdown-menu>
-        </el-dropdown>
+
     </div>
 </template>
 
@@ -60,7 +62,7 @@
         font-size: 16px;
         font-weight: 700;
         align-items: center;
-        display: -webkit-flex;
+        display: flex;
     }
 
     .joinText {
@@ -76,7 +78,6 @@
     }
 
     .menu_list {
-        position: absolute;
         left: 940px;
     }
 
