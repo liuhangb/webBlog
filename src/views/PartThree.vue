@@ -160,10 +160,10 @@
     .bottom {
         position: relative;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         margin-top: 35px;
         height: 45px;
-        text-align: center;
     }
 
     .learn_more {
@@ -175,11 +175,8 @@
     }
 
     .arrow_down {
-        position:absolute;
         width: 25px;
         height: 22px;
-        bottom: 0;
-
     }
 
 </style>
