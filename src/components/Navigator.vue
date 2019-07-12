@@ -77,7 +77,7 @@
 
     .menu_list {
         position: absolute;
-        margin-left: 940px;
+        left: 940px;
     }
 
     .link {
