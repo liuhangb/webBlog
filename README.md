@@ -28,3 +28,4 @@
 		1. flex布局：https://zhuanlan.zhihu.com/p/25303493
 		2. 相对定位：https://zh.learnlayout.com/position.html
 	6. element-ui组件使用：https://element.eleme.io/#/zh-CN/component/installation
+	7. 适配方案：vm移动端适配方案（https://roubin.me/vue-vw-layout/）；由于设计图不合理，导致在手机上的适配有问题：设计图里字体大小不合理，在手机上字体大小异常导致布局混乱；
