@@ -68,8 +68,6 @@
     .joinText {
         display: inline-block;
         margin-left: 1050px;
-
-        background-color: white;
     }
 
     .loginText {

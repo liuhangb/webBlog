@@ -9,7 +9,14 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-advanced": "^4.0.7",
     "element-ui": "^2.10.1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "postcss-url": "^8.0.0",
     "vue": "^2.6.10",
     "vue-i18n": "^8.11.2",
     "vue-router": "^3.0.6"
@@ -39,7 +46,24 @@
   },
   "postcss": {
     "plugins": {
-      "autoprefixer": {}
+      "autoprefixer": {},
+      "postcss-import": {},
+      "postcss-url": {},
+      "postcss-aspect-ratio-mini": {},
+      "postcss-cssnext": {},
+      "postcss-px-to-viewport": {
+        "viewportWidth": "1300",
+        "unitPrecision": "3",
+        "viewportUnit": "vw",
+        "selectorBlackList": [],
+        "minPixelValue": 1,
+        "mediaQuery": false
+      },
+      "cssnano": {
+        "preset": "advanced",
+        "autoprefixer": false,
+        "postcss-zindex": false
+      }
     }
   },
   "browserslist": [
